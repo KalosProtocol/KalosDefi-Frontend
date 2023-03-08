@@ -68,16 +68,16 @@ function MyApp(props: AppProps) {
         />
         <meta
           name="description"
-          content="Cheaper and faster than Uniswap? Discover PancakeSwap, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE."
+          content="KalosDeFi is Cheap and fast, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for XALO."
         />
-        <meta name="theme-color" content="#1FC7D4" />
+        <meta name="theme-color" content="#0d62bd" />
         <meta name="twitter:image" content="https://kalosdefi.finance/images/hero.png" />
         <meta
           name="twitter:description"
-          content="The most popular AMM on BSC! Earn CAKE through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by PancakeSwap), NFTs, and more, on a platform you can trust."
+          content="KalosDeFi AMM on BSC! Earn XALO through yield farming, then stake it in Kalos Pools to earn more tokens! Incubator Farm Offerings (new token launch model), NFTs, and more, on a platform you can trust."
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="🥞 PancakeSwap - A next evolution DeFi exchange on BNB Smart Chain (BSC)" />
+        <meta name="twitter:title" content="KalosDeFi - A next evolution DeFi exchange on BNB Smart Chain (BSC)" />
         <title>KalosDeFi</title>
         {(Component as NextPageWithLayout).mp && (
           // eslint-disable-next-line @next/next/no-sync-scripts
@@ -101,11 +101,11 @@ function MyApp(props: AppProps) {
         id="google-tag"
         dangerouslySetInnerHTML={{
           __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer', '${process.env.NEXT_PUBLIC_GTAG}');
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer', '${process.env.NEXT_PUBLIC_GTAG}');
           `,
         }}
       />

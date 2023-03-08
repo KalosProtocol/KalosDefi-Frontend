@@ -68,13 +68,13 @@ export const getStaticProps: GetStaticProps = async () => {
       })
 
       if (
-        totalTx?.pancakeFactory?.totalTransactions &&
-        totalTx30DaysAgo?.pancakeFactory?.totalTransactions &&
-        parseInt(totalTx.pancakeFactory.totalTransactions) > parseInt(totalTx30DaysAgo.pancakeFactory.totalTransactions)
+        totalTx?.kalosFactory?.totalTransactions &&
+        totalTx30DaysAgo?.kalosFactory?.totalTransactions &&
+        parseInt(totalTx.kalosFactory.totalTransactions) > parseInt(totalTx30DaysAgo.kalosFactory.totalTransactions)
       ) {
         results.totalTx30Days =
-          parseInt(totalTx.pancakeFactory.totalTransactions) -
-          parseInt(totalTx30DaysAgo.pancakeFactory.totalTransactions)
+          parseInt(totalTx.kalosFactory.totalTransactions) -
+          parseInt(totalTx30DaysAgo.kalosFactory.totalTransactions)
       }
     } catch (error) {
       if (process.env.NODE_ENV === 'production') {
@@ -86,7 +86,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const usersQuery = gql`
     query userCount($since: ISO8601DateTime, $till: ISO8601DateTime) {
       ethereum(network: bsc) {
-        dexTrades(exchangeName: { in: ["Pancake", "Pancake v2"] }, date: { since: $since, till: $till }) {
+        dexTrades(exchangeName: { in: ["Pancake", "KalosDeFi"] }, date: { since: $since, till: $till }) {
           count(uniq: senders)
         }
       }
@@ -112,7 +112,7 @@ export const getStaticProps: GetStaticProps = async () => {
   try {
     const result = await infoServerClient.request(gql`
       query tvl {
-        pancakeFactories(first: 1) {
+        kalosFactories(first: 1) {
           totalLiquidityUSD
         }
         token(id: "0x4d7a5b0665EdD992852cb0dA8257A1B7C77a6983") {
@@ -120,7 +120,7 @@ export const getStaticProps: GetStaticProps = async () => {
         }
       }
     `)
-    const { totalLiquidityUSD } = result.pancakeFactories[0]
+    const { totalLiquidityUSD } = result.kalosFactories[0]
     const xaloVaultV2 = getXaloVaultAddress()
     const xaloContract = getXaloContract()
     const totalXaloInVault = await xaloContract.balanceOf(xaloVaultV2)

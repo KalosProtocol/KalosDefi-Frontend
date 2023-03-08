@@ -63,7 +63,7 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 5,
+    pid: 4,
     lpSymbol: 'USDT-BUSD LP',
     lpAddresses: {
       97: '',

@@ -72,7 +72,7 @@ export const Anchors: React.FC = () => {
                 return (
                   <Button
                     as="a"
-                    href="https://pancakeswap.finance"
+                    href="https://kalosdefi.finance"
                     key={scale}
                     variant={variant}
                     scale={scale}
@@ -88,10 +88,10 @@ export const Anchors: React.FC = () => {
         })}
       </Box>
       <Box>
-        <Button as="a" href="https://pancakeswap.finance" mr="8px" external disabled>
+        <Button as="a" href="https://kalosdefi.finance" mr="8px" external disabled>
           Disabled
         </Button>
-        <Button as="a" href="https://pancakeswap.finance" variant="secondary" external disabled>
+        <Button as="a" href="https://kalosdefi.finance" variant="secondary" external disabled>
           Disabled
         </Button>
       </Box>

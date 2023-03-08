@@ -28,7 +28,7 @@ export const mainnetTokens = defineTokens({
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://pancakeswap.finance/',
+    'https://kalosdefi.finance/',
   ),
   xalo: new Token(
     MAINNET,
@@ -225,7 +225,7 @@ export const mainnetTokens = defineTokens({
     18,
     'SYRUP',
     'SyrupBar Token',
-    'https://pancakeswap.finance/',
+    'https://kalosdefi.finance/',
   ),
   xkalo: new Token(
     MAINNET,
@@ -2177,7 +2177,7 @@ export const testnetTokens = defineTokens({
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://pancakeswap.finance/',
+    'https://kalosdefi.finance/',
   ),
   busd: new Token(
     TESTNET,
@@ -2193,7 +2193,7 @@ export const testnetTokens = defineTokens({
     18,
     'SYRUP',
     'SyrupBar Token',
-    'https://pancakeswap.finance/',
+    'https://kalosdefi.finance/',
   ),
   bake: new Token(
     TESTNET,

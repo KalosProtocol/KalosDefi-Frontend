@@ -30,9 +30,9 @@ const HarvestCard = () => {
   const earningsBusd = new BigNumber(farmEarningsSum).multipliedBy(xaloPriceBusd)
   const numTotalToCollect = farmsWithStakedBalance.length
   const numFarmsToCollect = farmsWithStakedBalance.filter((value) => value.pid !== 0).length
-  const hasCakePoolToCollect = numTotalToCollect - numFarmsToCollect > 0
+  const hasXaloPoolToCollect = numTotalToCollect - numFarmsToCollect > 0
 
-  const earningsText = getEarningsText(numFarmsToCollect, hasCakePoolToCollect, earningsBusd, t)
+  const earningsText = getEarningsText(numFarmsToCollect, hasXaloPoolToCollect, earningsBusd, t)
   const [preText, toCollectText] = earningsText.split(earningsBusd.toString())
 
   const harvestAllFarms = useCallback(async () => {

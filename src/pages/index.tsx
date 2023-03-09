@@ -35,7 +35,7 @@ const tvl = 6082955532.115718
 export const getStaticProps: GetStaticProps = async () => {
   const totalTxQuery = gql`
     query TotalTransactions($id: ID!, $block: Block_height) {
-      pancakeFactory(id: $id, block: $block) {
+      kalosFactory(id: $id, block: $block) {
         totalTransactions
       }
     }
@@ -73,8 +73,7 @@ export const getStaticProps: GetStaticProps = async () => {
         parseInt(totalTx.kalosFactory.totalTransactions) > parseInt(totalTx30DaysAgo.kalosFactory.totalTransactions)
       ) {
         results.totalTx30Days =
-          parseInt(totalTx.kalosFactory.totalTransactions) -
-          parseInt(totalTx30DaysAgo.kalosFactory.totalTransactions)
+          parseInt(totalTx.kalosFactory.totalTransactions) - parseInt(totalTx30DaysAgo.kalosFactory.totalTransactions)
       }
     } catch (error) {
       if (process.env.NODE_ENV === 'production') {

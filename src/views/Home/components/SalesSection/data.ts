@@ -10,13 +10,13 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
     text: t('Trade Now'),
     external: false,
   },
-  
+
   secondaryButton: {
     to: 'https://kalos-protocol.gitbook.io/kazien-protocol-documentations/',
     text: t('Learn'),
     external: true,
   },
-  
+
   /*  images: {
     path: '/images/home/trade/',
     attributes: [
@@ -54,7 +54,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
 export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('XALO makes our world go round.'),
   bodyText: t(
-    'XALO token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'XALO token is at the heart of the Kalos Protocol ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   ),
   reverse: false,
   primaryButton: {

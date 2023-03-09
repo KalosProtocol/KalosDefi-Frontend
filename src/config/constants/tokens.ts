@@ -35,7 +35,7 @@ export const mainnetTokens = defineTokens({
     '0x4d7a5b0665EdD992852cb0dA8257A1B7C77a6983',
     18,
     'XALO',
-    'KalosDeFi Token',
+    'Kalos Token',
     'https://kalosdefi.finance/',
   ),
   gmi: new Token(MAINNET, '0x93D8d25E3C9A847a5Da79F79ecaC89461FEcA846', 18, 'GMI', 'Gamifi', 'https://gamifi.gg/'),

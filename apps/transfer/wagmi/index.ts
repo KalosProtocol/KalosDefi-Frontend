@@ -23,7 +23,7 @@ export const injectedConnector = new InjectedConnector({
 export const coinbaseConnector = new CoinbaseWalletConnector({
   chains,
   options: {
-    appName: 'KalosdeFi',
+    appName: 'KalosDeFi',
     appLogoUrl: 'https://kalosdefi.finance/logo.png',
   },
 })

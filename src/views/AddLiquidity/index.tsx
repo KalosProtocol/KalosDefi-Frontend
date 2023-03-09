@@ -73,7 +73,7 @@ export default function AddLiquidity() {
   const tokens = serializeTokens()
 
   const [zapMode] = useZapModeManager()
-  const [currencyIdA, currencyIdB] = router.query.currency || [tokens.bnb.symbol, tokens.cake.address]
+  const [currencyIdA, currencyIdB] = router.query.currency || [tokens.bnb.symbol, tokens.xalo.address]
   const [steps, setSteps] = useState(Steps.Choose)
 
   const { account, chainId, library } = useActiveWeb3React()
@@ -190,8 +190,8 @@ export default function AddLiquidity() {
     () => ({
       [independentField]:
         canZap &&
-          ((independentField === Field.CURRENCY_A && !zapTokenCheckedA) ||
-            (independentField === Field.CURRENCY_B && !zapTokenCheckedB))
+        ((independentField === Field.CURRENCY_A && !zapTokenCheckedA) ||
+          (independentField === Field.CURRENCY_B && !zapTokenCheckedB))
           ? ''
           : typedValue,
       [dependentField]: noLiquidity ? otherTypedValue : parsedAmounts[dependentField]?.toSignificant(6) ?? '',
@@ -292,12 +292,14 @@ export default function AddLiquidity() {
           setLiquidityState({ attemptingTxn: false, liquidityErrorMessage: undefined, txHash: response.hash })
 
           addTransaction(response, {
-            summary: `Add ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(3)} ${currencies[Field.CURRENCY_A]?.symbol
-              } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`,
+            summary: `Add ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(3)} ${
+              currencies[Field.CURRENCY_A]?.symbol
+            } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`,
             type: 'add-liquidity',
           })
         })
-      }).catch((err) => {
+      })
+      .catch((err) => {
         if (err && err.code !== 4001) {
           logError(err)
           console.error(`Add Liquidity failed`, err, args, value)
@@ -315,17 +317,17 @@ export default function AddLiquidity() {
 
   const pendingText = preferZapInstead
     ? t('Zapping %amountA% %symbolA% and %amountB% %symbolB%', {
-      amountA: parsedAmounts[Field.CURRENCY_A]?.toSignificant(6) ?? '0',
-      symbolA: currencies[Field.CURRENCY_A]?.symbol ?? '',
-      amountB: parsedAmounts[Field.CURRENCY_B]?.toSignificant(6) ?? '0',
-      symbolB: currencies[Field.CURRENCY_B]?.symbol ?? '',
-    })
+        amountA: parsedAmounts[Field.CURRENCY_A]?.toSignificant(6) ?? '0',
+        symbolA: currencies[Field.CURRENCY_A]?.symbol ?? '',
+        amountB: parsedAmounts[Field.CURRENCY_B]?.toSignificant(6) ?? '0',
+        symbolB: currencies[Field.CURRENCY_B]?.symbol ?? '',
+      })
     : t('Supplying %amountA% %symbolA% and %amountB% %symbolB%', {
-      amountA: parsedAmounts[Field.CURRENCY_A]?.toSignificant(6) ?? '',
-      symbolA: currencies[Field.CURRENCY_A]?.symbol ?? '',
-      amountB: parsedAmounts[Field.CURRENCY_B]?.toSignificant(6) ?? '',
-      symbolB: currencies[Field.CURRENCY_B]?.symbol ?? '',
-    })
+        amountA: parsedAmounts[Field.CURRENCY_A]?.toSignificant(6) ?? '',
+        symbolA: currencies[Field.CURRENCY_A]?.symbol ?? '',
+        amountB: parsedAmounts[Field.CURRENCY_B]?.toSignificant(6) ?? '',
+        symbolB: currencies[Field.CURRENCY_B]?.symbol ?? '',
+      })
 
   const handleDismissConfirmation = useCallback(() => {
     // if there was a tx hash, we want to clear the input
@@ -374,8 +376,9 @@ export default function AddLiquidity() {
     const minAmountOut = zapIn.zapInEstimated.swapAmountOut.mul(10000 - allowedSlippage).div(10000)
     if (rebalancing) {
       const maxAmountIn = zapIn.zapInEstimated.swapAmountIn.mul(10000 + allowedSlippage).div(10000)
-      summary = `Zap ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(3)} ${currencies[Field.CURRENCY_A]?.symbol
-        } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`
+      summary = `Zap ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(3)} ${
+        currencies[Field.CURRENCY_A]?.symbol
+      } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`
       if (currencyA === ETHER || currencyB === ETHER) {
         const tokenBIsBNB = currencyB === ETHER
         method = 'zapInBNBRebalancing'
@@ -417,8 +420,9 @@ export default function AddLiquidity() {
         pair.liquidityToken.address,
         minAmountOut,
       ]
-      summary = `Zap in ${parsedAmounts[zapIn.swapTokenField]?.toSignificant(3)} ${currencies[zapIn.swapTokenField].symbol
-        } for ${getLPSymbol(pair.token0.symbol, pair.token1.symbol)}`
+      summary = `Zap in ${parsedAmounts[zapIn.swapTokenField]?.toSignificant(3)} ${
+        currencies[zapIn.swapTokenField].symbol
+      } for ${getLPSymbol(pair.token0.symbol, pair.token1.symbol)}`
     }
 
     setLiquidityState({ attemptingTxn: true, liquidityErrorMessage: undefined, txHash: undefined })
@@ -501,8 +505,8 @@ export default function AddLiquidity() {
 
   const oneCurrencyIsWBNB = Boolean(
     chainId &&
-    ((currencyA && currencyEquals(currencyA, WETH[chainId])) ||
-      (currencyB && currencyEquals(currencyB, WETH[chainId]))),
+      ((currencyA && currencyEquals(currencyA, WETH[chainId])) ||
+        (currencyB && currencyEquals(currencyB, WETH[chainId]))),
   )
 
   const noAnyInputAmount = !parsedAmounts[Field.CURRENCY_A] && !parsedAmounts[Field.CURRENCY_B]
@@ -668,16 +672,16 @@ export default function AddLiquidity() {
                         </strong>{' '}
                         {zapIn.gasOverhead
                           ? t(
-                            'Some of your %token0% will be converted to %token1% before adding liquidity, but this may cause higher gas fees.',
-                            {
+                              'Some of your %token0% will be converted to %token1% before adding liquidity, but this may cause higher gas fees.',
+                              {
+                                token0: currencies[zapIn.swapTokenField]?.symbol,
+                                token1: currencies[zapIn.swapOutTokenField]?.symbol,
+                              },
+                            )
+                          : t('Some of your %token0% will be converted to %token1%.', {
                               token0: currencies[zapIn.swapTokenField]?.symbol,
                               token1: currencies[zapIn.swapOutTokenField]?.symbol,
-                            },
-                          )
-                          : t('Some of your %token0% will be converted to %token1%.', {
-                            token0: currencies[zapIn.swapTokenField]?.symbol,
-                            token1: currencies[zapIn.swapOutTokenField]?.symbol,
-                          })}
+                            })}
                       </MessageText>
                     </AutoColumn>
                   </Message>

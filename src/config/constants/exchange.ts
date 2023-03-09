@@ -92,7 +92,7 @@ export const DEFAULT_INPUT_CURRENCY = 'BNB'
 export const DEFAULT_OUTPUT_CURRENCY = '0x4d7a5b0665EdD992852cb0dA8257A1B7C77a6983'
 
 // Handler string is passed to Gelato to use PCS router
-export const GELATO_HANDLER = 'pancakeswap'
+export const GELATO_HANDLER = 'kalosdefi'
 export const GENERIC_GAS_LIMIT_ORDER_EXECUTION = BigNumber.from(500000)
 
 export const LIMIT_ORDERS_DOCS_URL = '*'

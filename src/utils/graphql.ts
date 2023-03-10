@@ -22,7 +22,7 @@ export const infoClient = new GraphQLClient(INFO_CLIENT, { headers: getGQLHeader
 
 export const infoServerClient = new GraphQLClient(INFO_CLIENT, {
   headers: {
-    'X-Sf': process.env.SF_HEADER,
+    // 'X-Sf': process.env.SF_HEADER,
   },
   timeout: 5000,
 })

@@ -65,7 +65,7 @@ export const BIG_INT_ZERO = JSBI.BigInt(0)
 export const BIG_INT_TEN = JSBI.BigInt(10)
 
 // one basis point
-export const BIPS_BASE = JSBI.BigInt(1000)
+export const BIPS_BASE = JSBI.BigInt(10000)
 export const ONE_BIPS = new Percent(JSBI.BigInt(1), BIPS_BASE)
 // used for warning states
 export const ALLOWED_PRICE_IMPACT_LOW: Percent = new Percent(JSBI.BigInt(100), BIPS_BASE) // 1%
@@ -83,7 +83,7 @@ export const BETTER_TRADE_LESS_HOPS_THRESHOLD = new Percent(JSBI.BigInt(50), BIP
 export const ZERO_PERCENT = new Percent('0')
 export const ONE_HUNDRED_PERCENT = new Percent('1')
 
-export const BASE_FEE = new Percent(JSBI.BigInt(25), BIPS_BASE)
+export const BASE_FEE = new Percent(JSBI.BigInt(30), BIPS_BASE)
 export const INPUT_FRACTION_AFTER_FEE = ONE_HUNDRED_PERCENT.subtract(BASE_FEE)
 
 // BNB

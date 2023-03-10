@@ -58,14 +58,14 @@ import {
 // Imports below migrated from Exchange useContract.ts
 import { Contract } from '@ethersproject/contracts'
 import { WETH } from '@kalosdefi/sdk'
-import IPancakePairABI from '../config/abi/IPancakePair.json'
+import IKalosPairABI from '../config/abi/IKalosPair.json'
 import { ERC20_BYTES32_ABI } from '../config/abi/erc20'
 import ERC20_ABI from '../config/abi/erc20.json'
 import WETH_ABI from '../config/abi/weth.json'
 import multiCallAbi from '../config/abi/Multicall.json'
 import { getContract, getProviderOrSigner } from '../utils'
 
-import { IPancakePair } from '../config/abi/types/IPancakePair'
+import { IKalosPair } from '../config/abi/types/IKalosPair'
 import { VaultKey } from '../state/types'
 
 /**
@@ -382,8 +382,8 @@ export function useBytes32TokenContract(tokenAddress?: string, withSignerIfPossi
   return useContract<Erc20Bytes32>(tokenAddress, ERC20_BYTES32_ABI, withSignerIfPossible)
 }
 
-export function usePairContract(pairAddress?: string, withSignerIfPossible?: boolean): IPancakePair | null {
-  return useContract(pairAddress, IPancakePairABI, withSignerIfPossible)
+export function usePairContract(pairAddress?: string, withSignerIfPossible?: boolean): IKalosPair | null {
+  return useContract(pairAddress, IKalosPairABI, withSignerIfPossible)
 }
 
 export function useMulticallContract() {

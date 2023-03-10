@@ -2,7 +2,7 @@
   {
     "inputs": [
       { "internalType": "address", "name": "_WBNBAddress", "type": "address" },
-      { "internalType": "address", "name": "_pancakeRouter", "type": "address" },
+      { "internalType": "address", "name": "_kalosRouter", "type": "address" },
       { "internalType": "uint256", "name": "_maxZapReverseRatio", "type": "uint256" }
     ],
     "stateMutability": "nonpayable",
@@ -154,8 +154,8 @@
   },
   {
     "inputs": [],
-    "name": "pancakeRouter",
-    "outputs": [{ "internalType": "contract IPancakeRouter02", "name": "", "type": "address" }],
+    "name": "kalosRouter",
+    "outputs": [{ "internalType": "contract IKalosRouter02", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },

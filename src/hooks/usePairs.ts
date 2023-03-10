@@ -1,13 +1,13 @@
 import { TokenAmount, Pair, Currency } from '@kalosdefi/sdk'
 import { useMemo } from 'react'
-import IKalosPairABI from 'config/abi/IKalosPair.json'
+import IPancakePairABI from 'config/abi/IPancakePair.json'
 import { Interface } from '@ethersproject/abi'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 
 import { useMultipleContractSingleData } from '../state/multicall/hooks'
 import { wrappedCurrency } from '../utils/wrappedCurrency'
 
-const PAIR_INTERFACE = new Interface(IKalosPairABI)
+const PAIR_INTERFACE = new Interface(IPancakePairABI)
 
 export enum PairState {
   LOADING,

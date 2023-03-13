@@ -20,11 +20,11 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 3,
+    pid: 6,
     // v1pid: 4,
     lpSymbol: 'XALO-BNB LP',
     lpAddresses: {
-      56: '0x6aa5e6b7c762e3304e184f94c3fcfd525c682f01',
+      56: '0xC8D11A05b5FeAb47EAc8E71A6623C55d007D02e4',
       97: '',
     },
     token: serializedTokens.xalo,

@@ -53,11 +53,11 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 5,
+    pid: 9,
     lpSymbol: 'CAKE-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0xb7758728a4838Ec79d1eD57a5bFC1517C3488983',
+      56: '0xA6eA8b0C3E911FB1ae9d3E1aAE2d521dCDF63CBd',
     },
     token: serializedTokens.cake,
     quoteToken: serializedTokens.wbnb,

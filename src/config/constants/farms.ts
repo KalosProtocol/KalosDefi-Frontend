@@ -22,7 +22,7 @@ const farms: SerializedFarmConfig[] = [
   {
     pid: 6,
     // v1pid: 4,
-    lpSymbol: 'XALO-BNB LP',
+    lpSymbol: 'XALO-BNB KLP',
     lpAddresses: {
       56: '0xC8D11A05b5FeAb47EAc8E71A6623C55d007D02e4',
       97: '',

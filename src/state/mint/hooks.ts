@@ -20,7 +20,7 @@ import useTotalSupply from 'hooks/useTotalSupply'
 import { useGasPrice } from 'state/user/hooks'
 import { computePriceImpact } from 'utils/prices'
 import { warningSeverity } from 'utils/exchange'
-import { BIG_INT_ZERO } from 'config/constants/exchange'
+// import { BIG_INT_ZERO } from 'config/constants/exchange'
 import { useTranslation } from 'contexts/Localization'
 import { wrappedCurrency, wrappedCurrencyAmount } from 'utils/wrappedCurrency'
 import { useZapContract } from 'hooks/useContract'
@@ -33,6 +33,8 @@ import tryParseAmount from 'utils/tryParseAmount'
 import { AppState, useAppDispatch } from '../index'
 import { useCurrencyBalances } from '../wallet/hooks'
 import { Field, typeInput } from './actions'
+
+const ZERO = JSBI.BigInt(0)
 
 export function useMintState(): AppState['mint'] {
   return useSelector<AppState, AppState['mint']>((state) => state.mint)
@@ -103,7 +105,14 @@ export function useDerivedMintInfo(
   const totalSupply = useTotalSupply(pair?.liquidityToken)
 
   const noLiquidity: boolean =
-    pairState === PairState.NOT_EXISTS || Boolean(totalSupply && JSBI.equal(totalSupply.raw, BIG_INT_ZERO))
+    pairState === PairState.NOT_EXISTS ||
+    Boolean(totalSupply && JSBI.equal(totalSupply.quotient, ZERO)) ||
+    Boolean(
+      pairState === PairState.EXISTS &&
+        pair &&
+        JSBI.equal(pair.reserve0.quotient, ZERO) &&
+        JSBI.equal(pair.reserve1.quotient, ZERO),
+    )
 
   // balances
   const balances = useCurrencyBalances(account ?? undefined, [

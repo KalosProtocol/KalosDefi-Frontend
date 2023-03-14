@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, JSBI, Price } from '@kalosdefi/sdk'
+import { Currency, currencyEquals, JSBI, Price } from '@kalosdefi/kalos-sdk'
 import tokens from 'config/constants/tokens'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useMemo } from 'react'
@@ -68,7 +68,7 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
 export const useCakeBusdPrice = (): Price | undefined => {
   const cakeBusdPrice = useBUSDPrice(tokens.cake)
   return cakeBusdPrice
-} 
+}
 
 export const useXaloBusdPrice = (): Price | undefined => {
   const xaloBusdPrice = useBUSDPrice(tokens.xalo)
@@ -99,7 +99,7 @@ export const useBUSDCakeAmount = (amount: number): number | undefined => {
     return multiplyPriceByAmount(cakeBusdPrice, amount)
   }
   return undefined
-} 
+}
 
 export const useBNBBusdPrice = (): Price | undefined => {
   const bnbBusdPrice = useBUSDPrice(tokens.wbnb)

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { BigNumber, BigNumberish } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
-import { currencyEquals, ETHER, JSBI, TokenAmount, WETH, MINIMUM_LIQUIDITY } from '@kalosdefi/sdk'
+import { currencyEquals, ETHER, JSBI, TokenAmount, WETH, MINIMUM_LIQUIDITY } from '@kalosdefi/kalos-sdk'
 import {
   Button,
   Text,

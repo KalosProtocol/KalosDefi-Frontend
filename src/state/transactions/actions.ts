@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from '@kalosdefi/sdk'
+import { ChainId } from '@kalosdefi/kalos-sdk'
 import { Order } from '@gelatonetwork/limit-orders-lib'
 
 export type TransactionType =

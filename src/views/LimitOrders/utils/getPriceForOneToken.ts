@@ -1,4 +1,4 @@
-import { CurrencyAmount, Price } from '@kalosdefi/sdk'
+import { CurrencyAmount, Price } from '@kalosdefi/kalos-sdk'
 
 /**
  * Given certain amount if input and output tokens

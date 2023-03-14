@@ -2,7 +2,7 @@ import { Web3Provider } from '@ethersproject/providers'
 import IKalosRouter02ABI from 'config/abi/IKalosRouter02.json'
 import { IKalosRouter02 } from 'config/abi/types/IKalosRouter02'
 import { CHAIN_ID } from 'config/constants/networks'
-import { JSBI, Percent, CurrencyAmount, Trade, Fraction, TokenAmount } from '@kalosdefi/sdk'
+import { JSBI, Percent, CurrencyAmount, Trade, Fraction, TokenAmount } from '@kalosdefi/kalos-sdk'
 import {
   ROUTER_ADDRESS,
   BIPS_BASE,

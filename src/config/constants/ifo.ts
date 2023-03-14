@@ -1,4 +1,4 @@
-import { Token, ChainId } from '@kalosdefi/sdk'
+import { Token, ChainId } from '@kalosdefi/kalos-sdk'
 import tokens from './tokens'
 import farms from './farms'
 import { Ifo } from './types'
@@ -27,8 +27,7 @@ const ifos: Ifo[] = [
     token: tokens.trivia,
     releaseBlockNumber: 19273145,
     campaignId: '511200000',
-    articleUrl:
-      'https://kalosdefi.finance/voting/proposal/bafkreihrc2d55vrowbn2oajzs77ffv73g4hzch2e7wulnuccmbwl5u4hvq',
+    articleUrl: 'https://kalosdefi.finance/voting/proposal/bafkreihrc2d55vrowbn2oajzs77ffv73g4hzch2e7wulnuccmbwl5u4hvq',
     tokenOfferingPrice: 0.035,
     version: 3.2,
     telegramUrl: 'https://t.me/TriviansGlobal',

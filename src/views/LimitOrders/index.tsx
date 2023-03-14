@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState, useMemo } from 'react'
 import { useRouter } from 'next/router'
-import { CurrencyAmount, Token, Trade } from '@kalosdefi/sdk'
+import { CurrencyAmount, Token, Trade } from '@kalosdefi/kalos-sdk'
 import { Button, Box, Flex, useModal, BottomDrawer, Link, useMatchBreakpointsContext } from '@pancakeswap/uikit'
 
 import { useTranslation } from 'contexts/Localization'

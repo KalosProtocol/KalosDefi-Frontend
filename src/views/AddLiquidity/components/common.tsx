@@ -1,5 +1,5 @@
 import React from 'react'
-import { Currency, Fraction, Percent, TokenAmount } from '@kalosdefi/sdk'
+import { Currency, Fraction, Percent, TokenAmount } from '@kalosdefi/kalos-sdk'
 import { Text, useTooltip, TooltipText, Box, Flex, Svg, SvgProps } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import styled from 'styled-components'

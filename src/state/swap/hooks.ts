@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Trade } from '@kalosdefi/sdk'
+import { Currency, CurrencyAmount, Trade } from '@kalosdefi/kalos-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { ParsedUrlQuery } from 'querystring'
 import { useEffect, useMemo, useState } from 'react'

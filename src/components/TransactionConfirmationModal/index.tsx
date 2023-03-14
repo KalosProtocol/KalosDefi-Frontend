@@ -1,5 +1,5 @@
 import { useCallback } from 'react'
-import { ChainId, Currency, Token } from '@kalosdefi/sdk'
+import { ChainId, Currency, Token } from '@kalosdefi/kalos-sdk'
 import styled from 'styled-components'
 import {
   Button,

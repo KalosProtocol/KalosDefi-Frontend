@@ -1,5 +1,5 @@
 import { useCallback, useState, useRef } from 'react'
-import { Currency, Token } from '@kalosdefi/sdk'
+import { Currency, Token } from '@kalosdefi/kalos-sdk'
 import {
   ModalContainer,
   ModalHeader,

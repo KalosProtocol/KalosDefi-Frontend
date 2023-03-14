@@ -2,7 +2,7 @@ import { useEffect, useCallback, useState, useMemo, useRef, createContext } from
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
 import { Image, Heading, Toggle, Text, /* Button, ArrowForwardIcon, */ Flex, Link } from '@pancakeswap/uikit'
-import { ChainId } from '@kalosdefi/sdk'
+import { ChainId } from '@kalosdefi/kalos-sdk'
 // import { NextLinkFromReactRouter } from 'components/NextLink'
 import styled from 'styled-components'
 import FlexLayout from 'components/Layout/Flex'

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { JSBI, Pair, Percent } from '@kalosdefi/sdk'
+import { JSBI, Pair, Percent } from '@kalosdefi/kalos-sdk'
 import {
   Button,
   Text,

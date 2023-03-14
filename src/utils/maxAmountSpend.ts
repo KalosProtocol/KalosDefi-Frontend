@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, JSBI } from '@kalosdefi/sdk'
+import { CurrencyAmount, ETHER, JSBI } from '@kalosdefi/kalos-sdk'
 import { MIN_BNB, BIG_INT_ZERO } from 'config/constants/exchange'
 
 /**

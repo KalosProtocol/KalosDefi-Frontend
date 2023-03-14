@@ -1,4 +1,4 @@
-import { Token } from '@kalosdefi/sdk'
+import { Token } from '@kalosdefi/kalos-sdk'
 import { Modal, InjectedModalProps } from '@pancakeswap/uikit'
 import ImportToken from 'components/SearchModal/ImportToken'
 import { useTranslation } from 'contexts/Localization'

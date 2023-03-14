@@ -1,4 +1,4 @@
-import { Currency } from '@kalosdefi/sdk'
+import { Currency } from '@kalosdefi/kalos-sdk'
 import { Box, Text, AddIcon, CardBody, Button, CardFooter } from '@pancakeswap/uikit'
 import { CurrencySelect } from 'components/CurrencySelect'
 import ConnectWalletButton from 'components/ConnectWalletButton'

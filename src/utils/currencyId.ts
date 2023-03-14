@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@kalosdefi/sdk'
+import { Currency, ETHER, Token } from '@kalosdefi/kalos-sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'BNB'

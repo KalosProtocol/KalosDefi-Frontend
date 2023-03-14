@@ -1,4 +1,4 @@
-import { Token } from '@kalosdefi/sdk'
+import { Token } from '@kalosdefi/kalos-sdk'
 import SwapWarningTokens from 'config/constants/swapWarningTokens'
 
 const swapWarningTokens = Object.values(SwapWarningTokens)

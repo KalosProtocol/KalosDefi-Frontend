@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Token, Currency } from '@kalosdefi/sdk'
+import { Token, Currency } from '@kalosdefi/kalos-sdk'
 import { Button, Text, ErrorIcon, Flex, Message, Checkbox, Link, Tag, Grid } from '@pancakeswap/uikit'
 import { AutoColumn } from 'components/Layout/Column'
 import { useAddUserToken } from 'state/user/hooks'

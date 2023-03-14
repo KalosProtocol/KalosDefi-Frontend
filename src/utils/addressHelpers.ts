@@ -1,4 +1,4 @@
-import { ChainId } from '@kalosdefi/sdk'
+import { ChainId } from '@kalosdefi/kalos-sdk'
 import addresses from 'config/constants/contracts'
 import { Address } from 'config/constants/types'
 import { VaultKey } from 'state/types'

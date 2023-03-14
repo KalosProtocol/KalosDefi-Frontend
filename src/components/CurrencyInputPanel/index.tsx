@@ -1,4 +1,4 @@
-import { Currency, Pair, Token } from '@kalosdefi/sdk'
+import { Currency, Pair, Token } from '@kalosdefi/kalos-sdk'
 import { Button, ChevronDownIcon, Text, useModal, Flex, Box, MetamaskIcon } from '@pancakeswap/uikit'
 import styled, { css } from 'styled-components'
 import { canRegisterToken, registerToken } from 'utils/wallet'

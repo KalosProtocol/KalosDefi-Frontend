@@ -1,4 +1,4 @@
-import { ChainId } from '@kalosdefi/sdk'
+import { ChainId } from '@kalosdefi/kalos-sdk'
 import { TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import uniqBy from 'lodash/uniqBy'

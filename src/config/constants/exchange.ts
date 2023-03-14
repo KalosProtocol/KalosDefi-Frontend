@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token } from '@kalosdefi/sdk'
+import { ChainId, JSBI, Percent, Token } from '@kalosdefi/kalos-sdk'
 import { BigNumber } from '@ethersproject/bignumber'
 import { mainnetTokens, testnetTokens } from './tokens'
 import { ChainTokenList } from './types'

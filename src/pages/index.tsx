@@ -1,4 +1,4 @@
-import { FACTORY_ADDRESS } from '@kalosdefi/sdk'
+import { FACTORY_ADDRESS } from '@kalosdefi/kalos-sdk'
 import { getUnixTime, sub } from 'date-fns'
 import { gql } from 'graphql-request'
 import { GetStaticProps } from 'next'

@@ -1,4 +1,4 @@
-import { Percent } from '@kalosdefi/sdk'
+import { Percent } from '@kalosdefi/kalos-sdk'
 import { TranslateFunction } from 'contexts/Localization/types'
 
 export enum PercentageDirection {

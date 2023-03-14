@@ -11,7 +11,7 @@ import {
   TokenAmount,
   Route,
   MINIMUM_LIQUIDITY,
-} from '@kalosdefi/sdk'
+} from '@kalosdefi/kalos-sdk'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useSelector } from 'react-redux'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'

@@ -2337,9 +2337,9 @@
     "@json-rpc-tools/types" "^1.7.6"
     "@pedrouid/environment" "^1.0.1"
 
-"@kalosdefi/sdk@^0.0.16":
+"@kalosdefi/kalos-sdk@^0.0.16":
   version "0.0.16"
-  resolved "https://registry.yarnpkg.com/@kalosdefi/sdk/-/sdk-0.0.16.tgz#613d4b0820b9f5d54231f2d223447bca466df28f"
+  resolved "https://registry.yarnpkg.com/@kalosdefi/kalos-sdk/-/sdk-0.0.16.tgz#613d4b0820b9f5d54231f2d223447bca466df28f"
   integrity sha512-eXLdne3sXUkYOucYtCTpyEYGYPvKbhACJzDhdqZECSl6O8oXFommCShvLt8Hgb9rDPWNIA+oSicFYP7g+l+BJg==
   dependencies:
     big.js "^5.2.2"

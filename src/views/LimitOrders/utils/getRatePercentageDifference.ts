@@ -1,4 +1,4 @@
-import { Percent, Price } from '@kalosdefi/sdk'
+import { Percent, Price } from '@kalosdefi/kalos-sdk'
 
 const getRatePercentageDifference = (currentMarketRate: Price, price: Price) => {
   if (currentMarketRate && price) {

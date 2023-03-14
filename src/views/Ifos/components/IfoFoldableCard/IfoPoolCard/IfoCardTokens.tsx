@@ -14,7 +14,7 @@ import {
   ErrorIcon,
 } from '@pancakeswap/uikit'
 import { useWeb3React } from '@web3-react/core'
-import { Token } from '@kalosdefi/sdk'
+import { Token } from '@kalosdefi/kalos-sdk'
 import { Ifo, PoolIds } from 'config/constants/types'
 import tokens from 'config/constants/tokens'
 import { xaloBnbLpToken } from 'config/constants/ifo'

@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@kalosdefi/sdk'
+import { Trade, TradeType } from '@kalosdefi/kalos-sdk'
 import { Text } from '@pancakeswap/uikit'
 import { Field } from 'state/swap/actions'
 import { useTranslation } from 'contexts/Localization'

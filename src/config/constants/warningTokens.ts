@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@kalosdefi/sdk'
+import { ChainId, Token } from '@kalosdefi/kalos-sdk'
 import { CHAIN_ID } from './networks'
 import { defineTokens } from './tokens'
 

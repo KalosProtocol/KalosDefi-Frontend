@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { Currency, CurrencyAmount, Fraction, Percent, Token, TokenAmount } from '@kalosdefi/sdk'
+import { Currency, CurrencyAmount, Fraction, Percent, Token, TokenAmount } from '@kalosdefi/kalos-sdk'
 import { InjectedModalProps, Button } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import TransactionConfirmationModal, {

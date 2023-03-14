@@ -1,4 +1,4 @@
-import { CurrencyAmount, Percent, Price } from '@kalosdefi/sdk'
+import { CurrencyAmount, Percent, Price } from '@kalosdefi/kalos-sdk'
 /**
  * Helper to multiply a Price object by an arbitrary amount
  */

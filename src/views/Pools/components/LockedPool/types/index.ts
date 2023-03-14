@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from 'react'
-import { Token } from '@kalosdefi/sdk'
+import { Token } from '@kalosdefi/kalos-sdk'
 import BigNumber from 'bignumber.js'
 import { VaultPosition, VaultPositionParams } from 'utils/xaloPool'
 import { DeserializedLockedVaultUser } from 'state/types'

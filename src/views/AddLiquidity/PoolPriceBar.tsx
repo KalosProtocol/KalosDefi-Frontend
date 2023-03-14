@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from '@kalosdefi/sdk'
+import { Currency, Percent, Price } from '@kalosdefi/kalos-sdk'
 import { Text } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { ONE_BIPS } from 'config/constants/exchange'

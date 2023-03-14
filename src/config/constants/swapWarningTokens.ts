@@ -1,4 +1,4 @@
-import { Token } from '@kalosdefi/sdk'
+import { Token } from '@kalosdefi/kalos-sdk'
 import tokens from 'config/constants/tokens'
 import warningTokens from 'config/constants/warningTokens'
 

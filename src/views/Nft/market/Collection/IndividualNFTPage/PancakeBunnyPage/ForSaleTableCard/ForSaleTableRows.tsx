@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { useWeb3React } from '@web3-react/core'
-import { Price } from '@kalosdefi/sdk'
+import { Price } from '@kalosdefi/kalos-sdk'
 import { Button, Grid, Text, Flex, Box, BinanceIcon, useModal, Skeleton } from '@pancakeswap/uikit'
 import { formatNumber } from 'utils/formatBalance'
 import { ContextApi } from 'contexts/Localization/types'

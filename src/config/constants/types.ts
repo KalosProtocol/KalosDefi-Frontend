@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { Token, ChainId } from '@kalosdefi/sdk'
+import { Token, ChainId } from '@kalosdefi/kalos-sdk'
 
 // a list of tokens by chain
 export type ChainTokenList = {

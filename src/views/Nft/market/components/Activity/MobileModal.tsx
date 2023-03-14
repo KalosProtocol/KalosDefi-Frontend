@@ -1,5 +1,5 @@
 import { InjectedModalProps, Modal, Flex, Text, Button, Link, BinanceIcon, Box } from '@pancakeswap/uikit'
-import { Price } from '@kalosdefi/sdk'
+import { Price } from '@kalosdefi/kalos-sdk'
 import useTheme from 'hooks/useTheme'
 import { Activity, NftToken } from 'state/nftMarket/types'
 import { LightGreyCard } from 'components/Card'

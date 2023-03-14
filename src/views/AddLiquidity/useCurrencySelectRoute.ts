@@ -1,4 +1,4 @@
-import { Currency } from '@kalosdefi/sdk'
+import { Currency } from '@kalosdefi/kalos-sdk'
 import { useRouter } from 'next/router'
 import { useCallback } from 'react'
 import currencyId from 'utils/currencyId'

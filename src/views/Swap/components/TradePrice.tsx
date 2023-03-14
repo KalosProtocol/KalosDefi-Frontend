@@ -1,4 +1,4 @@
-import { Price } from '@kalosdefi/sdk'
+import { Price } from '@kalosdefi/kalos-sdk'
 import { Text, AutoRenewIcon } from '@pancakeswap/uikit'
 import { StyledBalanceMaxMini } from './styleds'
 

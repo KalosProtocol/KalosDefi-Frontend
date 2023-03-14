@@ -1,4 +1,4 @@
-import { Percent } from '@kalosdefi/sdk'
+import { Percent } from '@kalosdefi/kalos-sdk'
 import { warningSeverity } from 'utils/exchange'
 import { ONE_BIPS } from 'config/constants/exchange'
 import { ErrorText } from './styleds'

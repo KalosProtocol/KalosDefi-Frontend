@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@kalosdefi/sdk'
+import { Token, TokenAmount } from '@kalosdefi/kalos-sdk'
 import { useMemo } from 'react'
 
 import { useTokenContract } from './useContract'

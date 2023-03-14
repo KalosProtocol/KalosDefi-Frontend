@@ -1,5 +1,5 @@
 // used to construct the list of all pairs we consider by default in the frontend
-import { ChainId, Token } from '@kalosdefi/sdk'
+import { ChainId, Token } from '@kalosdefi/kalos-sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 import { ChainTokenList } from './types'
 

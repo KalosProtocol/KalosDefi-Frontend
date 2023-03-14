@@ -1,4 +1,4 @@
-import { Price } from '@kalosdefi/sdk'
+import { Price } from '@kalosdefi/kalos-sdk'
 import { Flex, Text } from '@pancakeswap/uikit'
 import { multiplyPriceByAmount } from 'utils/prices'
 import { useTranslation } from 'contexts/Localization'

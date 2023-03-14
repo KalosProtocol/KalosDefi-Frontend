@@ -1,6 +1,6 @@
 import { MaxUint256 } from '@ethersproject/constants'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Trade, TokenAmount, CurrencyAmount, ETHER } from '@kalosdefi/sdk'
+import { Trade, TokenAmount, CurrencyAmount, ETHER } from '@kalosdefi/kalos-sdk'
 import { CHAIN_ID } from 'config/constants/networks'
 import { useCallback, useMemo } from 'react'
 import { logError } from 'utils/sentry'

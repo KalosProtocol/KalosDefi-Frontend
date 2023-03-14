@@ -1,5 +1,5 @@
 import { useCallback } from 'react'
-import { Currency, Token, ETHER } from '@kalosdefi/sdk'
+import { Currency, Token, ETHER } from '@kalosdefi/kalos-sdk'
 import { Field, selectCurrency, switchCurrencies, typeInput, setRecipient } from './actions'
 import { useAppDispatch } from '../index'
 

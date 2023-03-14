@@ -43,11 +43,11 @@ const farms: SerializedFarmConfig[] = [
   },
   //    * V3 by order of release (some may be out of PID order due to multiplier boost)
   {
-    pid: 8,
+    pid: 10,
     lpSymbol: 'USDT-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x4a2C580c347BB21Ac8d40dbC5b1cAD4428cd2F63',
+      56: '0x4DeCaF7d9518999904654114FCaD46AC4594094a',
     },
     token: serializedTokens.usdt,
     quoteToken: serializedTokens.wbnb,

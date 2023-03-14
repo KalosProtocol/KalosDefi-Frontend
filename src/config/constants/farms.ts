@@ -33,7 +33,7 @@ const farms: SerializedFarmConfig[] = [
   {
     pid: 7,
     // v1pid: 1,
-    lpSymbol: 'BUSD-BNB LP',
+    lpSymbol: 'BUSD-BNB KLP',
     lpAddresses: {
       97: '',
       56: '0x35A85DECF9509077034e96Ea68A8dc1809e9cB48',
@@ -44,7 +44,7 @@ const farms: SerializedFarmConfig[] = [
   //    * V3 by order of release (some may be out of PID order due to multiplier boost)
   {
     pid: 8,
-    lpSymbol: 'USDT-BNB LP',
+    lpSymbol: 'USDT-BNB KLP',
     lpAddresses: {
       97: '',
       56: '0x4a2C580c347BB21Ac8d40dbC5b1cAD4428cd2F63',
@@ -54,7 +54,7 @@ const farms: SerializedFarmConfig[] = [
   },
   {
     pid: 9,
-    lpSymbol: 'CAKE-BNB LP',
+    lpSymbol: 'CAKE-BNB KLP',
     lpAddresses: {
       97: '',
       56: '0xA6eA8b0C3E911FB1ae9d3E1aAE2d521dCDF63CBd',
@@ -64,7 +64,7 @@ const farms: SerializedFarmConfig[] = [
   },
   {
     pid: 10,
-    lpSymbol: 'USDT-BUSD LP',
+    lpSymbol: 'USDT-BUSD KLP',
     lpAddresses: {
       97: '',
       56: '0x4DeCaF7d9518999904654114FCaD46AC4594094a',

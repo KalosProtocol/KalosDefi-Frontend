@@ -84,13 +84,13 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 107,
-    lpSymbol: 'TRIVIA-BNB LP',
+    pid: 11,
+    lpSymbol: 'MBOX-BNB KLP',
     lpAddresses: {
-      56: '0xEF642c40EebBc964881dD7Bd1A0b50e90441E73A',
+      56: '0x8F38bdbb49160a736eaAc09DbBAE02Bd4Da7d308',
       97: '',
     },
-    token: serializedTokens.trivia,
+    token: serializedTokens.mbox,
     quoteToken: serializedTokens.wbnb,
   },
   /* {

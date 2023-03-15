@@ -120,7 +120,7 @@ const Footer = () => {
         <Link external href="*">
           {t('Learn how to start')}
         </Link>
-        {!account && <ConnectWalletButton mt="48px" />}
+        {!account && <ConnectWalletButton mt="24px" />}
       </Wrapper>
     </>
   )

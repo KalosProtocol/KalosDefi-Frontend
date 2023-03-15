@@ -124,7 +124,8 @@ const Footer = () => {
       </Wrapper>
     </>
   )
-  const Footer = () => {
+  const Footer2 = () => {
+    const { t } = useTranslation()
     const { account } = useWeb3React()
 }
 

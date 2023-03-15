@@ -146,6 +146,17 @@ const CakeDataRow = () => {
           </>
         )}
       </StyledColumn>
+      <StyledColumn noMobileBorder style={{ gridArea: 'b' }}>
+        <Text color="textSubtle">{t('Total Insurance Vault')}</Text>
+        {xaloSupply ? (
+          <Balance decimals={0} lineHeight="1.1" fontSize="24px" bold value={xaloSupply} />
+        ) : (
+          <>
+            <div ref={observerRef} />
+            <Skeleton height={24} width={126} my="4px" />
+          </>
+        )}
+      </StyledColumn>
       <StyledColumn noMobileBorder style={{ gridArea: 'c' }}>
         <Text color="textSubtle">{t('Max Supply')}</Text>
 

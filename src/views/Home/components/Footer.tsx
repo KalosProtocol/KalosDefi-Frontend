@@ -107,20 +107,20 @@ const Footer = () => {
       </Wrapper>
 
       <Wrapper>
-        <Heading ml="36px" scale="xl" color="black">
+        <Heading ml="36px" scale="xl" color="black"> /*mb*/
           {t('Start in seconds.')}
         </Heading>
-        <Text textAlign="center" color="white">
+        <Text textAlign="center" color="black">
           {t('Connect your crypto wallet to start using the app in seconds.')}
         </Text>
-        <Text mb="24px" bold color="white">
+        <Text mb="24px" bold color="yellow">
           {t('No registration needed.')}
         </Text>
 
         <Link external href="*">
           {t('Learn how to start')}
         </Link>
-        {!account && <ConnectWalletButton mt="24px" />}
+        {!account && <ConnectWalletButton mt="48px" />}
       </Wrapper>
     </>
   )

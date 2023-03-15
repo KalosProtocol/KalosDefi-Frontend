@@ -73,7 +73,7 @@ export default function AddLiquidity() {
   const tokens = serializeTokens()
 
   const [zapMode] = useZapModeManager()
-  const [currencyIdA, currencyIdB] = router.query.currency || [tokens.bnb.symbol, tokens.cake.address]
+  const [currencyIdA, currencyIdB] = router.query.currency || [tokens.bnb.symbol, tokens.xalo.address]
   const [steps, setSteps] = useState(Steps.Choose)
 
   const { account, chainId, library } = useActiveWeb3React()
@@ -234,7 +234,7 @@ export default function AddLiquidity() {
   async function onAdd() {
     if (!chainId || !library || !account) return
     const routerContract = getRouterContract(chainId, library, account)
-
+    // console.log(routerContract)
     const { [Field.CURRENCY_A]: parsedAmountA, [Field.CURRENCY_B]: parsedAmountB } = mintParsedAmounts
     if (!parsedAmountA || !parsedAmountB || !currencyA || !currencyB || !deadline) {
       return
@@ -277,10 +277,13 @@ export default function AddLiquidity() {
       ]
       value = null
     }
-
+    console.log('-------estimate----------')
+    console.log(estimate, routerContract)
+    console.log(...args, value ? { value } : {})
+    console.log(currencyA === ETHER || currencyB === ETHER)
     setLiquidityState({ attemptingTxn: true, liquidityErrorMessage: undefined, txHash: undefined })
     await estimate(...args, value ? { value } : {})
-      .then((estimatedGasLimit) =>
+      .then((estimatedGasLimit) => {
         method(...args, {
           ...(value ? { value } : {}),
           gasLimit: calculateGasMargin(estimatedGasLimit),
@@ -294,8 +297,8 @@ export default function AddLiquidity() {
             } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`,
             type: 'add-liquidity',
           })
-        }),
-      )
+        })
+      })
       .catch((err) => {
         if (err && err.code !== 4001) {
           logError(err)
@@ -545,9 +548,9 @@ export default function AddLiquidity() {
                   ? `${getLPSymbol(currencies[Field.CURRENCY_A].symbol, currencies[Field.CURRENCY_B].symbol)}`
                   : t('Add Liquidity')
               }
-              subtitle={t('Receive LP tokens and earn 0.17% trading fees')}
+              subtitle={t('Receive LP tokens and earn 0.25% trading fees')}
               helper={t(
-                'Liquidity providers earn a 0.17% trading fee on all trades made for that token pair, proportional to their share of the liquidity pool.',
+                'Liquidity providers earn a 0.25% trading fee on all trades made for that token pair, proportional to their share of the liquidity pool.',
               )}
               backTo={canZap ? () => setSteps(Steps.Choose) : '/liquidity'}
             />

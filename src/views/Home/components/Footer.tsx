@@ -27,7 +27,7 @@ import { useWeb3React } from '@web3-react/core'
 ` */
 
 const Wrapper = styled(Flex)`
-  z-index: 1;
+  z-index: 0;
   position: relative;
   flex-direction: column;
   align-items: start;

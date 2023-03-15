@@ -107,7 +107,7 @@ const Footer = () => {
       </Wrapper>
 
       <Wrapper>
-        <Heading mb="24px" scale="xl" color="white">
+        <Heading mb="12px" scale="l" color="black">
           {t('Start in seconds.')}
         </Heading>
         <Text textAlign="center" color="white">

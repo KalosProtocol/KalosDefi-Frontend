@@ -27,7 +27,7 @@ import { useWeb3React } from '@web3-react/core'
 ` */
 
 const Wrapper = styled(Flex)`
-  z-index: 0;
+  z-index: 1;
   position: relative;
   flex-direction: column;
   align-items: start;
@@ -124,6 +124,8 @@ const Footer = () => {
       </Wrapper>
     </>
   )
+  const Footer = () => {
+    const { account } = useWeb3React()
 }
 
 export default Footer

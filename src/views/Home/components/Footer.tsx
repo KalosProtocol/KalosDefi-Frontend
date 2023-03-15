@@ -124,9 +124,9 @@ const Footer = () => {
       </Wrapper>
     </>
   )
-  const Footer2 = () => {
+  function Footer2(): void {
     const { t } = useTranslation()
     const { account } = useWeb3React()
-}
+  }
 
 export default Footer

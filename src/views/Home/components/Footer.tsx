@@ -30,7 +30,7 @@ const Wrapper = styled(Flex)`
   z-index: 1;
   position: relative;
   flex-direction: column;
-  align-items: start;
+  align-items: start; /*center*/
   justify-content: center;
   overflow: hidden;
 `

@@ -6,6 +6,7 @@ import { multicallv2 } from 'utils/multicall copy'
 import xaloAbi from 'config/abi/xalo.json'
 import { BalanceWithLoading } from 'components/Balance'
 import { useState, useEffect } from 'react'
+import { usePriceXaloBusd } from 'state/farms/hooks'
 
 const Wrapper = styled(Flex)`
   z-index: 1;
@@ -24,6 +25,7 @@ const Footer = () => {
   const tokenOwner = '0xD00B0Fa59b7ADb92f30e6A402Af28CC42e238343'
 
   const [xaloBalance, setXaloBalance] = useState(0)
+  const xaloPriceBusd = usePriceXaloBusd()
 
   useEffect(() => {
     const fetchXaloBalance = async () => {
@@ -43,6 +45,8 @@ const Footer = () => {
       setXaloBalance(0)
     }
   }, [account, tokenAddress, tokenOwner])
+
+  const total = xaloPriceBusd.times(xaloBalance)
 
   return (
     <>
@@ -66,6 +70,9 @@ const Footer = () => {
               {t('Treasury Vault balance:')}
             </Text>
             <BalanceWithLoading value={xaloBalance} bold color="black" />
+            <Text ml="8px" color="white">
+              {`($${total.toFixed(2)})`}
+            </Text>
           </Flex>
         )}
       </Wrapper>

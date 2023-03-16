@@ -55,6 +55,7 @@ export type Colors = {
   invertedContrast: string;
   input: string;
   inputSecondary: string;
+  backgroundHome: string;
   background: string;
   backgroundDisabled: string;
   backgroundAlt: string;

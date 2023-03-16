@@ -65,19 +65,18 @@ const Home: React.FC = () => {
         {account && (
           <UserBannerWrapper>
             <UserBanner />
-          </UserBannerWrapper>    //<Flex flexDirection="column" justifyContent="center" alignItems="center">
+          </UserBannerWrapper> // <Flex flexDirection="column" justifyContent="center" alignItems="center">
         )}
-         
+
         <Hero />
       </StyledHeroSection>
-      
+
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}
         index={2}
         hasCurvedDivider={false}
       >
-        
         <SalesSection {...swapSectionData(t)} />
       </PageSection>
       <PageSection
@@ -94,10 +93,10 @@ const Home: React.FC = () => {
         <SalesSection {...earnSectionData(t)} />
         <FarmsPoolsRow />
       </PageSection>
-      
+
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
-        background={theme.colors.background}
+        background={theme.colors.backgroundHome}
         index={2}
         hasCurvedDivider={false}
       >

@@ -66,11 +66,11 @@ const Footer = () => {
         </Link>
         {account && (
           <Flex mt="24px" alignItems="center">
-            <Text mr="8px" color="white">
+            <Text mr="8px" color="#db7516">
               {t('Treasury Vault balance:')}
             </Text>
-            <BalanceWithLoading value={xaloBalance} bold color="black" />
-            <Text ml="8px" color="white">
+            <BalanceWithLoading value={xaloBalance} bold color="#5edb16" />
+            <Text ml="8px" color="#db7516">
               {`($${total.toFixed(2)})`}
             </Text>
           </Flex>

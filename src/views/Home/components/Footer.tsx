@@ -63,9 +63,9 @@ const Footer = () => {
         {account && (
           <Flex mt="24px" alignItems="center">
             <Text mr="8px" color="white">
-              {t('Your XALO balance:')}
+              {t('Treasury Vault balance:')}
             </Text>
-            <BalanceWithLoading value={xaloBalance} color="black" decimals={18} />
+            <BalanceWithLoading value={xaloBalance} color="black" decimals={8} />
           </Flex>
         )}
       </Wrapper>

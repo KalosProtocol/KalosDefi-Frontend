@@ -30,7 +30,7 @@ const Wrapper = styled(Flex)`
   z-index: 1;
   position: relative;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   overflow: hidden;
 `
@@ -97,6 +97,23 @@ const Footer = () => {
           {t('Connect your crypto wallet to start using the app in seconds.')}
         </Text>
         <Text mb="24px" bold color="white">
+          {t('No registration needed.')}
+        </Text>
+
+        <Link external href="*">
+          {t('Learn how to start')}
+        </Link>
+        {!account && <ConnectWalletButton mt="24px" />}
+      </Wrapper>
+
+      <Wrapper>
+        <Heading ml="36px" scale="xl" color="black"> 
+          {t('Start in seconds.')}
+        </Heading>
+        <Text textAlign="center" color="green">
+          {t('Connect your crypto wallet to start using the app in seconds.')}
+        </Text>
+        <Text mb="24px" bold color="yellow">
           {t('No registration needed.')}
         </Text>
 

@@ -65,7 +65,7 @@ const Footer = () => {
             <Text mr="8px" color="white">
               {t('Treasury Vault balance:')}
             </Text>
-            <BalanceWithLoading value={xaloBalance} color="black" decimals={8} />
+            <BalanceWithLoading value={xaloBalance} bold color="black" />
           </Flex>
         )}
       </Wrapper>

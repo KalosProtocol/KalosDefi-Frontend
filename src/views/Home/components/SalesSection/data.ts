@@ -52,9 +52,9 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
 })
 
 export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('XALO makes our world go round.'),
+  headingText: t('The Kalos Protocol ecosystem is powered by the XALO token.'),
   bodyText: t(
-    'XALO token is at the heart of the Kalos Protocol ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'With XALO, you can engage in a variety of activities such as buying, winning, farming, spending, staking, and even voting, making it an incredibly versatile asset. Join the Kalos community and experience the power of XALO today.!',
   ),
   reverse: false,
   primaryButton: {

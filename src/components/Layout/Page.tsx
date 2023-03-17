@@ -29,7 +29,7 @@ export const PageMeta: React.FC<{ symbol?: string }> = ({ symbol }) => {
   } = useTranslation()
   const { pathname } = useRouter()
   const xaloPriceUsd = useXaloBusdPrice()
-  const xaloPriceUsdDisplay = xaloPriceUsd ? `$${xaloPriceUsd.toFixed(3)}` : '...'
+  const xaloPriceUsdDisplay = xaloPriceUsd ? `$${xaloPriceUsd.toFixed(6)}` : '...'
 
   const pageMeta = getCustomMeta(pathname, t, locale) || {}
   const { title, description, image } = { ...DEFAULT_META, ...pageMeta }

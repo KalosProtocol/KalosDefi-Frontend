@@ -21,7 +21,7 @@ const Footer = () => {
   const { t } = useTranslation()
   const { account } = useWeb3React()
   const tokenAddress = '0x4d7a5b0665EdD992852cb0dA8257A1B7C77a6983'
-  const tokenBalanceOf = '0x70a08231' // balanceOf function signature
+  // const tokenBalanceOf = '0x70a08231' // balanceOf function signature
   const tokenOwner = '0xD00B0Fa59b7ADb92f30e6A402Af28CC42e238343'
 
   const [xaloBalance, setXaloBalance] = useState(0)

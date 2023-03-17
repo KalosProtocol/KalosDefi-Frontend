@@ -31,7 +31,7 @@ const XaloPrice: React.FC<Props> = ({ xaloPriceUsd, color = "textSubtle", showSk
       target="_blank"
     >
       <LogoRound width="24px" mr="8px" />
-      <Text color={color} bold>{`$${xaloPriceUsd.toFixed(3)}`}</Text>
+      <Text color={color} bold>{`$${xaloPriceUsd.toFixed(6)}`}</Text>
     </PriceLink>
   ) : showSkeleton ? (
     <Skeleton width={80} height={24} />

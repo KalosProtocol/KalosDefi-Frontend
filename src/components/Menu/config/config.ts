@@ -122,11 +122,11 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string) => Co
     icon: MoreIcon,
     hideSubNav: true,
     items: [
-      /* {
+      {
         label: t('Info'),
         href: '/info',
       },
-      {
+      /* {
         label: t('IFO'),
         href: '/ifo',
       },

@@ -96,7 +96,6 @@ const Hero = () => {
 
   return (
     <>
-      
       <Flex
         position="relative"
         flexDirection={['column-reverse', null, null, 'row']}
@@ -117,9 +116,11 @@ const Hero = () => {
             <NextLinkFromReactRouter to="/swap">
               <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
             </NextLinkFromReactRouter>
+            <NextLinkFromReactRouter to="/liquidity">
+              <Button variant={!account ? 'secondary' : 'primary'}>{t('Deposit Liquidity')}</Button>
+            </NextLinkFromReactRouter>
           </Flex>
         </Flex>
-        
       </Flex>
     </>
   )

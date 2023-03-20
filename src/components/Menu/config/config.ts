@@ -31,17 +31,17 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string) => Co
     label: t('Trade'),
     icon: SwapIcon,
     fillIcon: SwapFillIcon,
-    href: '/swap',
+    href: '/liquidity',
     showItemsOnMobile: false,
     items: [
-      {
+      /* {
         label: t('Swap'),
         href: '/swap',
       },
       {
         label: t('Limit'),
         href: '/limit-orders',
-      },
+      }, */
       {
         label: t('Liquidity'),
         href: '/liquidity',
